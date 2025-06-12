@@ -12,7 +12,10 @@
  */
 
 // Your code goes here...
-
+const getDiffTwentySeven = (num) => {
+  const diff = Math.abs(num - 27);
+  return num > 27 ? diff * 2 : diff;
+};
 
 
 
@@ -24,7 +27,10 @@
  */
 
 // Your code goes here
-
+const sumOfTwoIntegers = (num1, num2) => {
+  const sum = num1 + num2;
+  return num1 === num2 ? sum * 3 : sum;
+};
 
 
 
@@ -38,7 +44,9 @@
  */
 
 // Your code goes here...
-
+const isOneOfThemOrTheirSumIsFourty = (num1, num2) => {
+  return num1 === 40 || num2 === 40 || num1 + num2 === 40;
+};
 
 
 
@@ -54,4 +62,4 @@ const f = {
   sumOfTwoIntegers: sumOfTwoIntegers || undefined,
   isOneOfThemOrTheirSumIsFourty: isOneOfThemOrTheirSumIsFourty || undefined,
 }
-export { f }
+export { f } 
